@@ -1,17 +1,23 @@
 import React, { Component } from 'react';
 import { Navigator, Text, TouchableHighlight } from 'react-native';
 import Scene from './Scene';
-import GitHub from './GitHub';
-import HackerNews from './HackerNews';
-import Reddit from './Reddit';
 
 export default class Challenge extends Component {
     constructor() {
         super();
         this.routes = [
-            GitHub.defaultProps,
-            HackerNews.defaultProps,
-            Reddit.defaultProps,
+            {
+                title: 'GitHub',
+                index: 0,
+            },
+            {
+                title: 'HackerNews',
+                index: 1,
+            },
+            {
+                title: 'Reddit',
+                index: 2,
+            },
         ]
     }
 
@@ -21,7 +27,7 @@ export default class Challenge extends Component {
                 initialRoute={this.routes[0]}
                 initialRouteStack={this.routes}
                 renderScene={(route, navigator) => {
-                    return <Scene title={route.title} />
+                    return <Scene route={route} />
                 }}
                 navigationBar={
                     <Navigator.NavigationBar
