@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Navigator from 'react-native';
-import GitHub from './Components/GitHub';
-import HackerNews from './Components/HackerNews';
-import Reddit from './Components/Reddit';
+import GitHub from './GitHub';
+import HackerNews from './HackerNews';
+import Reddit from './Reddit';
 
 
 export default class Scene extends Component {
@@ -10,8 +10,8 @@ export default class Scene extends Component {
         super();
 
         this.route_componentes = {
-            'github': <GitHub />,
-            'hackernews': <HackerNews />,
+            'github': <GitHub /> ,
+            'hackernews': <HackerNews /> ,
             'reddit': <Reddit />
         }
     }
