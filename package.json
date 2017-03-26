@@ -7,21 +7,20 @@
     "test": "jest"
   },
   "dependencies": {
-    "babel-relay-plugin": "^0.2.5",
-    "graphql": "^0.4.4",
-    "react": "15.3.2",
-    "react-native": "0.37.0",
-    "react-relay": "^0.3.2",
-    "sync-request": "^2.0.1"
+    "babel-relay-plugin": "0.11.0",
+    "react": "15.4.2",
+    "react-native": "0.42.3",
+    "react-relay": "0.10.0",
+    "sync-request": "^4.0.1"
   },
   "jest": {
     "preset": "jest-react-native"
   },
   "devDependencies": {
-    "babel-jest": "17.0.2",
-    "babel-preset-react-native": "1.9.0",
-    "jest": "17.0.3",
-    "jest-react-native": "17.0.3",
-    "react-test-renderer": "15.3.2"
+    "babel-jest": "19.0.0",
+    "babel-preset-react-native": "1.9.1",
+    "jest": "19.0.2",
+    "jest-react-native": "18.0.0",
+    "react-test-renderer": "15.4.2"
   }
 }

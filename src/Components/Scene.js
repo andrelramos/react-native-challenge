@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
-import {
-    View,
-    Text,
-    Navigator
-} from 'react-native';
+import Navigator from 'react-native';
 import GitHub from './Components/GitHub';
 import HackerNews from './Components/HackerNews';
 import Reddit from './Components/Reddit';
+
 
 export default class Scene extends Component {
     constructor() {
@@ -30,16 +27,6 @@ export default class Scene extends Component {
         return (
             this.route_componentes[route_lower_title]
         )
-        
-        /*return (
-            <View style={{
-                flex: 1,
-                flexDirection: 'column',
-                justifyContent: 'center',
-            }}>
-                <Text>{this.props.route.title}</Text>
-            </View>
-        )*/
     }
 
 }

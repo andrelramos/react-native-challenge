@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
+import Relay from 'react-relay';
 import { Navigator, Text, TouchableHighlight } from 'react-native';
-import Scene from './Scene';
+import Scene from './Components/Scene';
+
+Relay.injectNetworkLayer(
+    new Relay.DefaultNetworkLayer('http://www.GraphQLHub.com/graphql')
+); 
 
 export default class Challenge extends Component {
     constructor() {
         super();
+        
         this.routes = [
             {
                 title: 'GitHub',
